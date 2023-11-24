@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import './globals.css'
-import PrimaryNavbar from './components/PrimaryNavbar'
+import '../globals.css'
+import DashboardNavbar from '../components/DashboardNavbar'
 
 
 
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="container mx-auto">
-        <PrimaryNavbar />
+        <DashboardNavbar />
         {children}
         </body>
     </html>
