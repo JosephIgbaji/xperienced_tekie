@@ -1,10 +1,12 @@
-import Link from "next/link"
+
 import Hero from "./components/Hero"
+import StartDoing from './components/StartDoing';
 
 export default function Home() {
   return (
-    <main className="container w-full px-30">
-      <Hero />      
+    <main className="container max-w-full">
+      <Hero />
+      <StartDoing />
     </main>
   )
 }

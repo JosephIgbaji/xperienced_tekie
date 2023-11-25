@@ -12,7 +12,7 @@ export default function PrimaryNavbar({}: Props) {
     const [showDropDown, setShowDropDown] = useState(false)
 
 
-  return (<nav className="flex justify-between px-30 items-center ">
+  return (<nav className="flex justify-between md:px-10 items-center ">
     <div>
         <Link href="/">
             <Image src={X} width="100" height="100" alt="Xperienced Tekie logo"/>
@@ -28,9 +28,12 @@ export default function PrimaryNavbar({}: Props) {
                     </svg>
                 </span>
             </li>
+            <Link href="/dashboard">
+            
             <li className="rounded-lg bg-blue-950 text-white p-2 hover:bg-blue-700 cursor-pointer">Dashboard</li>
+            </Link>
         </ul>
-       { showDropDown && (<ul className="absolute top-10 left-10 bg-blue-900 text-white flex flex-col gap-2">
+       { showDropDown && (<ul className="absolute z-20 top-10 left-10 bg-blue-900 text-white flex flex-col gap-2">
             <li onClick={() => setShowDropDown(!showDropDown)} className="cursor-pointer hover:bg-blue-950 p-2">Frontend Internship</li>
             <li onClick={() => setShowDropDown(!showDropDown)} className="cursor-pointer hover:bg-blue-950 p-2">Backend Internship</li>
         </ul> )}

@@ -5,16 +5,16 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center">
-      <div className="space-y-5">
+    <div className="flex flex-col md:flex-row justify-between items-center md:px-10">
+      <div className="space-y-5 text-center md:text-left px-5 mb-5 md:w-1/2">
         <h2 className="text-5xl font-extrabold text-blue-950">
           Xperience. Build. Collaborate.
         </h2>
-        <p className="text-2xl">
+        <p className="text-xl">
           Xperience an internship that bridges the gap between you and your next
           job as a developer!
         </p>
-        <p className="text-2xl">
+        <p className="text-xl">
           Work as an intern on a fast-paced start-up that provides you real
           world Xperience, mentorship, collaboration, and certification.
         </p>
@@ -59,8 +59,14 @@ const Hero = () => {
           link={"/sign-up"}
         />
       </div>
-      <div className="relative">
-        <Image src={heroImage} width={800} height={800} alt="hero image" />
+      <div className="flex items-center justify-center md:-z-10 ">
+        <Image
+          className="w-10/12"
+          src={heroImage}
+          width={800}
+          height={800}
+          alt="hero image"
+        />
       </div>
     </div>
   );
