@@ -12,10 +12,10 @@ export default function PrimaryNavbar({}: Props) {
     const [showDropDown, setShowDropDown] = useState(false)
 
 
-  return (<nav className="flex justify-between md:px-10 items-center ">
+  return (<nav className="flex justify-between md:px-10 px-2 pr-4 items-center ">
     <div>
         <Link href="/">
-            <Image src={X} width="100" height="100" alt="Xperienced Tekie logo"/>
+            <Image src={X} width="70" height="70" alt="Xperienced Tekie logo"/>
         </Link>
     </div>
     <div className="relative hidden md:block font-semibold">
